@@ -62,7 +62,7 @@ public class Etudiant implements Serializable {
     @Basic(optional = false)
     @NotNull
     @Column(name = "cne")
-    private double cne;
+    private long cne;
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 255)
@@ -117,7 +117,7 @@ public class Etudiant implements Serializable {
         this.idEtudiant = idEtudiant;
     }
 
-    public Etudiant(Integer idEtudiant, double cne, String cin, String nom, String prenom, Date dateNaissance) {
+    public Etudiant(Integer idEtudiant, long cne, String cin, String nom, String prenom, Date dateNaissance) {
         this.idEtudiant = idEtudiant;
         this.cne = cne;
         this.cin = cin;
@@ -142,11 +142,11 @@ public class Etudiant implements Serializable {
         this.optimisticLock = optimisticLock;
     }
 
-    public double getCne() {
+    public long getCne() {
         return cne;
     }
 
-    public void setCne(double cne) {
+    public void setCne(long cne) {
         this.cne = cne;
     }
 

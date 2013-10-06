@@ -66,9 +66,9 @@ h3{font-size: 12px}
                 <div id="left" class="col-lg-2">
                 <ui:insert name="left">
                     
-                    <h:form>  
+                
               
-                                    <p:growl id="messages" autoUpdate="true"/>  
+                                    <p:growl autoUpdate="true"/>  
 
                                     <p:panelMenu style="width:180px;">  
                                         <p:submenu label="Doctorant">  
@@ -79,6 +79,7 @@ h3{font-size: 12px}
                                             <p:menuitem value="Afficher" action="#{brancheController.showList()}"  icon="ui-icon-disk" />  
                                             <p:menuitem value="Ajouter" action="#{etudiantController.showCreate}"  icon="ui-icon-arrowrefresh-1-w" />  
                                             <p:menuitem value="Ajouter choix" action="#{etudiantController.showAddChoice}"  icon="ui-icon-arrowrefresh-1-w" />  
+                                            <p:menuitem value="Ajouter un diplome" action="#{etudiantController.showAddQualification}" icon="ui-icon-arrowrefresh-1-w"/>
                                         </p:submenu>  
                                         <p:submenu label="Sujet">  
                                             <p:menuitem value="Afficher" action="#{sujetController.showList}"  icon="ui-icon-disk" />  
@@ -94,7 +95,7 @@ h3{font-size: 12px}
                                         </p:submenu>  
                                     </p:panelMenu>  
 
-                                </h:form>  
+        
 
                    </ui:insert>
             </div>

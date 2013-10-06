@@ -56,6 +56,8 @@ public class LoginController {
         // destroy session:
         HttpSession session = (HttpSession) context.getExternalContext().getSession(false);
         session.invalidate();
+        
+        
 
         // using faces-redirect to initiate a new request:
         return "/index.xhtml?faces-redirect=true";

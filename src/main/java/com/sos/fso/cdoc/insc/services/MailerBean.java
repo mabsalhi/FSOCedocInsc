@@ -54,7 +54,7 @@ public class MailerBean {
                     .getDateTimeInstance(DateFormat.LONG, DateFormat.SHORT);
             Date timeStamp = new Date();
             String messageBody = "Pour confirmer votre demande d'inscription veuillez , cliquez sur le lien suivant : "
-                    + "http://localhost:8080/cdocFSOinsc/account/validation.xhtml?key="+key;
+                    + "http://localhost:8080/cdocFSOinsc/compte/validation.xhtml?key="+key;
             message.setText(messageBody);
             message.setSentDate(timeStamp);
             Transport.send(message);
